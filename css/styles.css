@@ -1,37 +1,45 @@
-#title {
-  background-color: #ff4c68;
-  color: #fff;
+body {
+  font-family: "Montserrat";
+  text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat";
+  font-weight: bold;
 }
 
 h1 {
-  font-family: "Montserrat";
   font-size: 3.5rem;
   line-height: 1.5;
   font-weight: 900;
-}
-
-h2 {
-  font-family: "Montserrat";
-  font-weight: bold;
-  font-size: 3rem;
-  line-height: 1.5;
-}
-
-h3 {
-  font-family: "Montserrat";
-  font-weight: bold;
 }
 
 p {
   color: #8f8f8f;
 }
 
+/* Containers */
+
 .container-fluid {
-  padding: 3% 15% 7%;
+  padding: 7% 15%;
 }
 
-body {
+/* Headings */
+
+.big-heading {
   font-family: "Montserrat";
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.section-heading {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 /* Navbar */
@@ -63,6 +71,18 @@ body {
   padding: 0 0 4.5rem;
 }
 
+/* Title Section */
+
+#title {
+  background-color: #ff4c68;
+  color: #fff;
+  text-align: left;
+}
+
+#title .container-fluid {
+  padding: 3% 15% 7%;
+}
+
 /* Download Buttons */
 
 .download-button {
@@ -81,14 +101,12 @@ body {
 /* Features Section */
 
 #features {
-  padding: 7% 15%;
   background-color: #fff;
   position: relative;
 }
 
 .feature-box {
-  text-align: center;
-  padding: 5%;
+  padding: 4.5%;
 }
 
 .icon {
@@ -100,10 +118,13 @@ body {
   color: #ff4c68;
 }
 
+.feature-title {
+  font-size: 1.5rem;
+}
+
 /* Testimonial Section */
 
 #testimonials {
-  text-align: center;
   background-color: #ef8172;
   color: #fff;
 }
@@ -114,13 +135,13 @@ body {
   margin: 20px;
 }
 
-.carousel-item {
-  padding: 7% 15%;
+.testimonial-text {
+  font-size: 3rem;
+  line-height: 1.5;
 }
 
 #press {
   background-color: #ef8172;
-  text-align: center;
   padding-bottom: 3%;
 }
 
@@ -133,9 +154,37 @@ body {
 
 #pricing {
   padding: 100px;
-  text-align: center;
 }
 
 .pricing-column {
   padding: 3% 2%;
+}
+
+.price-text {
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  #title {
+    text-align: center;
+  }
+  .title-image {
+    position: static;
+    transform: rotate(0);
+    width: 50%;
+  }
+}
+
+/* CTA Section */
+
+#cta {
+  background-color: #ff4c68;
+  color: #fff;
+}
+
+/* Footer Section */
+
+.social-icon {
+  margin: 20px 10px;
 }
